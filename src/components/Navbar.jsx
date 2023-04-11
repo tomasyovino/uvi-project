@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Dialog, Popover } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Close, Menu } from "@mui/icons-material"
 import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
 import uviLogo from "../assets/logos/uvi.png";
@@ -10,7 +10,7 @@ const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className='bg-[#3D235A]/[0.7]'>
+        <header className='bg-[#3D235A]/[0.7] fixed top-0 w-full'>
             <nav className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global'>
                 <div className='flex lg:flex-1'>
                     <Link to="/" className="-m-1.5 p-1.5">
@@ -24,7 +24,7 @@ const Navbar = () => {
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                        <Menu className="h-6 w-6" aria-hidden="true" />
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12 lg:items-center">
@@ -60,7 +60,7 @@ const Navbar = () => {
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
-                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                            <Close className="h-6 w-6" aria-hidden="true" />
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
