@@ -30,6 +30,18 @@ body {
   min-height: 100vh;
 }
 
+.main-section {
+  background-image: url("./assets/mainBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-background-filter {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(230.77deg, rgba(48, 0, 101, 0.576) -30.77%, rgba(73, 70, 231, 0.576) 17.89%, rgba(168, 47, 252, 0.576) 102.58%);
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

@@ -1,8 +1,12 @@
-import React from 'react';
+import { MainSection, ServicesSection, TestimonialSection } from "../sections";
 
 const HomePage = () => {
     return (
-        <div>HomePage</div>
+        <>
+            <MainSection />
+            <ServicesSection />
+            <TestimonialSection />
+        </>
     );
 };
 
