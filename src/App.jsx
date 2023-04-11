@@ -1,11 +1,18 @@
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import HomePage from "./pages/HomePage";
+import NotFoundPage from "./pages/NotFoundPage";
+import { Navbar } from "./components";
 
 const App = () => {
 
   return (
-    <h1 className="font-bold">
-      Hello world!
-    </h1>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </Router>
   );
 };
 
