@@ -13,9 +13,9 @@ const Navbar = () => {
         <header className='bg-[#3D235A]/[0.7] fixed top-0 w-full z-40'>
             <nav className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global'>
                 <div className='flex lg:flex-1'>
-                    <Link to="/" className="-m-1.5 p-1.5">
+                    <HashLink to="/#main" className="-m-1.5 p-1.5">
                         <img className='h-8' src={uviLogo} alt="Uvi's logo" />
-                    </Link>
+                    </HashLink>
                 </div>
                 <div className="flex lg:hidden">
                     <button
@@ -28,18 +28,23 @@ const Navbar = () => {
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12 lg:items-center">
-                    <Link to={"/"} className="font-normal leading-6 ease-in-out duration-300 hover:text-[#F07922]">
+                    <HashLink to={"/#main"} className="font-normal leading-6 ease-in-out duration-300 hover:text-[#F07922]">
                         Inicio
-                    </Link>
+                    </HashLink>
                     <HashLink to="/#services" className="font-normal leading-6 ease-in-out duration-300 hover:text-[#F07922]">
                         Servicios
                     </HashLink>
                     <HashLink to="/#testimonial" className="font-normal leading-6 ease-in-out duration-300 hover:text-[#F07922]">
                         Testimonios
                     </HashLink>
-                    <Link to="/" className="py-3.5 px-7 text-[#282C4B] font-bold leading-6 bg-white rounded-full">
+                    <a
+                        className='py-3.5 px-7 text-[#282C4B] font-bold leading-6 bg-white rounded-full'
+                        href='mailto:info@uvi.com.ar'
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         ¡Contáctanos!
-                    </Link>
+                    </a>
                 </Popover.Group>
             </nav>
 
@@ -47,13 +52,17 @@ const Navbar = () => {
                 <div className="fixed inset-0 z-50" />
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
-                        <Link to="/" className="-m-1.5 p-1.5">
+                        <HashLink
+                            to="/#main"
+                            className="-m-1.5 p-1.5"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
                             <img
                                 className="h-8 w-auto"
                                 src={uviBackgroundedLogo}
                                 alt="Uvi's logo"
                             />
-                        </Link>
+                        </HashLink>
                         <button
                             type="button"
                             className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -66,24 +75,36 @@ const Navbar = () => {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <Link to="/" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                                <HashLink
+                                    to="/#main"
+                                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
                                     Inicio
-                                </Link>
+                                </HashLink>
                                 <HashLink
                                     to={"/#services"}
                                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Servicios
                                 </HashLink>
                                 <HashLink
                                     to={"/#testimonial"}
                                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Testimonios
                                 </HashLink>
-                                <Link to="/" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                                <a
+                                    href='mailto:info@uvi.com.ar'
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
                                     ¡Contáctanos!
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>

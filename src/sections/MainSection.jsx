@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Facebook, PlayCircle } from "@mui/icons-material";
+import { LinkedIn, AlternateEmail, Facebook, PlayCircle } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import homeBanner from "../assets/homeBanner.png"
@@ -10,16 +10,28 @@ import zoover from "../assets/logos/zoover.png";
 
 const MainSection = () => {
     return (
-        <main className='main-section'>
+        <main className='main-section' id="main">
             <div className="main-background-filter px-4 pt-48">
                 <div className="max-w-7xl mx-auto">
                     <div className='flex flex-col lg:flex-row-reverse lg:justify-between'>
                         <img src={homeBanner}  draggable={false} alt="Home Banner" className="-mt-20 lg:mr-20" />
                         <div className="flex flex-col-reverse gap-x-7 lg:flex-row lg:w-1/2">
                             <div className='flex justify-around items-center gap-3.5 mt-16 lg:flex-col lg:justify-start'>
-                                <Link to="/" className='text-xs text-center font-semibold lg:rotate-90 lg:mb-2'><span >Follow Us</span></Link>
-                                <Link to="/"><Instagram className="!h-4 !w-4" /></Link>
-                                <Link to="/"><Twitter className="!h-4 !w-4" /></Link>
+                                <Link to="/" className='text-xs text-center font-semibold lg:rotate-90 lg:mb-2'><span>Follow Us</span></Link>
+                                <a 
+                                    href="https://www.linkedin.com/company/universo-i/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <LinkedIn className="!h-4 !w-4" />
+                                </a>
+                                <a
+                                    href='mailto:info@uvi.com.ar'
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <AlternateEmail className="!h-4 !w-4" />
+                                </a>
                                 <Link to="/"><Facebook className="!h-4 !w-4" /></Link>
                             </div>
                             <div className="flex flex-col">
