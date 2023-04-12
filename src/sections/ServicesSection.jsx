@@ -34,7 +34,7 @@ const ServicesSection = () => {
                     </div>
                 </div>
                 <CardsContainer cards={cards} />
-                <div className="max-w-7xl p-4 flex flex-col items-start lg:justify-around lg:flex-row">
+                <div className="max-w-7xl p-4 flex flex-col items-start lg:justify-around lg:flex-row" id='formulary'>
                     <img className="hidden lg:block" src={contactBanner} alt="Contact Banner" />
                     <Form cards={cards} />
                 </div>
