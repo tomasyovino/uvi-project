@@ -24,7 +24,7 @@ const CardsContainer = ({ cards }) => {
     return (
         <div className="cards-container mt-4 py-8">
             {/* MOBILE */}
-            <div className="max-w-7xl px-4 lg:hidden">
+            <div className="max-w-7xl px-4 lg:hidden mx-auto">
                 <Carousel responsive={responsive}>
                     {
                         cards.map((card, i) => (
@@ -41,7 +41,7 @@ const CardsContainer = ({ cards }) => {
             </div>
             
             {/* DESKTOP */}
-            <div className="hidden max-w-7xl px-4 lg:flex justify-center items-center gap-12">
+            <div className="hidden max-w-7xl px-4 lg:flex justify-center items-center gap-12 mx-auto">
                 {
                     newCards.map((card, i) => (
                         <Card

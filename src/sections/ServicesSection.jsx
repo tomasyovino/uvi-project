@@ -24,8 +24,8 @@ const cards = [
 const ServicesSection = () => {
     return (
         <section id="services" className="services-section mx-auto">
-            <div className="services-background-filter pt-8">
-                <div className="max-w-7xl px-4 flex flex-col items-center justify-center gap-16 lg:flex-row">
+            <div className="services-background-filter pt-8 mx-auto">
+                <div className="mx-auto max-w-7xl px-4 flex flex-col items-center justify-center gap-16 lg:flex-row">
                     <img src={servicesBanner} alt="Services Banner" />
                     <div className="lg:w-1/3">
                         <h5 className="text-xs text-[#F07922] mb-2.5">SERVICIOS</h5>
@@ -34,7 +34,7 @@ const ServicesSection = () => {
                     </div>
                 </div>
                 <CardsContainer cards={cards} />
-                <div className="max-w-7xl p-4 flex flex-col items-start lg:justify-around lg:flex-row" id='formulary'>
+                <div className="max-w-7xl p-4 flex flex-col items-start lg:justify-around lg:flex-row mx-auto" id='formulary'>
                     <img className="hidden lg:block" src={contactBanner} alt="Contact Banner" />
                     <Form cards={cards} />
                 </div>
