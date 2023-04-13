@@ -28,7 +28,7 @@ const ServicesSection = () => {
                 <div className="mx-auto max-w-7xl px-4 flex flex-col items-center justify-center gap-16 lg:flex-row">
                     <img src={servicesBanner} alt="Services Banner" />
                     <div className="lg:w-1/3">
-                        <h5 className="text-xs text-[#F07922] mb-2.5">SERVICIOS</h5>
+                        <h5 className="text-xs text-[#F07922] mb-2.5 font-bold">SERVICIOS</h5>
                         <h4 className="text-2xl font-bold mb-3.5">¿Qué tenemos para ti?</h4>
                         <p className="text-sm">Nuestros servicios de confección de CV, optimización de LinkedIn y entrenamiento en entrevistas potenciarán tus oportunidades profesionales y te ayudarán a destacar en el competitivo mundo laboral.</p>
                     </div>

@@ -10,12 +10,12 @@ const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className='bg-[#3D235A]/[0.7] fixed top-0 w-full z-40'>
+        <header className='bg-[#3D235A]/[0.7] absolute top-0 w-full z-40'>
             <nav className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global'>
                 <div className='flex lg:flex-1'>
-                    <HashLink to="/#main" className="-m-1.5 p-1.5">
+                    <Link to="/" className="-m-1.5 p-1.5">
                         <img className='h-8' src={uviLogo} alt="Uvi's logo" />
-                    </HashLink>
+                    </Link>
                 </div>
                 <div className="flex lg:hidden">
                     <button
@@ -28,9 +28,9 @@ const Navbar = () => {
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12 lg:items-center">
-                    <HashLink to={"/#main"} className="font-normal leading-6 ease-in-out duration-300 hover:text-[#F07922]">
+                    <Link to={"/"} className="font-normal leading-6 ease-in-out duration-300 hover:text-[#F07922]">
                         Inicio
-                    </HashLink>
+                    </Link>
                     <HashLink to="/#services" className="font-normal leading-6 ease-in-out duration-300 hover:text-[#F07922]">
                         Servicios
                     </HashLink>
@@ -52,8 +52,8 @@ const Navbar = () => {
                 <div className="fixed inset-0 z-50" />
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
-                        <HashLink
-                            to="/#main"
+                        <Link
+                            to="/"
                             className="-m-1.5 p-1.5"
                             onClick={() => setMobileMenuOpen(false)}
                         >
@@ -62,7 +62,7 @@ const Navbar = () => {
                                 src={uviBackgroundedLogo}
                                 alt="Uvi's logo"
                             />
-                        </HashLink>
+                        </Link>
                         <button
                             type="button"
                             className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -75,13 +75,13 @@ const Navbar = () => {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <HashLink
-                                    to="/#main"
+                                <Link
+                                    to=""
                                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Inicio
-                                </HashLink>
+                                </Link>
                                 <HashLink
                                     to={"/#services"}
                                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"

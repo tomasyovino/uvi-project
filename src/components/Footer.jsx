@@ -4,7 +4,7 @@ import { LinkedIn, AlternateEmail, Facebook, } from "@mui/icons-material";
 
 const Footer = () => {
     return (
-        <footer className='mx-auto max-w-7xl text-xs py-11 px-24 flex flex-col gap-6 items-center lg:flex-row lg:justify-between lg:divide-x'>
+        <footer className='mx-auto text-xs py-11 px-24 flex flex-col gap-6 items-center lg:flex-row lg:justify-between lg:divide-x bg-gradient-to-br lg:bg-gradient-to-r from-[#282C4B] to-[#000000]'>
             <div className="lg:w-1/3">
                 <img src={uviBackgrounded} alt="Uvi's Logo" className="w-16" />
             </div>
