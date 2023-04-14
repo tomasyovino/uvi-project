@@ -62,7 +62,7 @@ const Form = ({ cards }) => {
     };
 
     return (
-        <div className='lg:mt-10'>
+        <div className='lg:mt-10 mx-auto'>
             <h3 className='w-2/3 text-4xl font-bold mb-8'>Sé parte de nuestra familia</h3>
             <form className='flex flex-col gap-4' onSubmit={sendForm}>
                 <div className='flex flex-col gap-4 lg:flex-row lg:justify-between'>
